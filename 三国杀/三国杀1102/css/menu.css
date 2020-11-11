@@ -1,0 +1,170 @@
+/* menu页面 */
+body{
+    background-image: url(../images/login/bigBg.jpg);
+    background-repeat:no-repeat;
+    background-size: cover
+  }
+  .main{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .content{
+    width: 100%;
+    height: 650px;
+    position: relative;
+  }
+  
+  /* 视频背景 */
+  video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    object-fit: fill;
+    z-index: -1;
+  }
+  .noVideo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    object-fit: fill;
+    background: url(../images/login/mainBackground.jpg);
+  }
+  /* 乱斗按钮*/
+  .luandou{
+      width: 172px;
+      height: 162px;
+      /* border: 1px solid red; */
+      position: absolute;
+      top: 10%;
+      left: 65%;
+      background: url("../images/menu/ld.png");
+      animation: luandou 4s linear infinite;
+  }
+  @keyframes luandou{
+    0%,100%{
+      background: url("../images/menu/ld.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    50%{
+      background: url("../images/menu/ld1.png") no-repeat;
+      background-size: 80% 80%;
+    }
+  }
+    /* 经典按钮*/
+    .jd{
+      width: 172px;
+      height: 162px;
+      /* border: 1px solid red; */
+      position: absolute;
+      top: 25%;
+      left: 80%;
+      background: url("../images/menu/jd.png");
+      animation: jd 4s linear infinite;
+  }
+  @keyframes jd{
+    0%,100%{
+      background: url("../images/menu/jd1.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    50%{
+      background: url("../images/menu/jd.png") no-repeat;
+      background-size: 80% 80%;
+    }
+  }
+  /* 排位按钮*/
+  .paiwei{
+    width: 172px;
+    height: 162px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    background: url("../images/menu/paiwei.png");
+    animation: paiwei 4s linear infinite;
+}
+@keyframes paiwei{
+  0%,100%{
+    background: url("../images/menu/paiwei\ \(2\).png") no-repeat;
+    background-size: 100% 100%;
+  }
+  50%{
+    background: url("../images/menu/paiwei.png") no-repeat;
+    background-size: 80% 80%;
+  }
+}
+ /* 创房按钮*/
+ .chuang{
+  width: 172px;
+  height: 162px;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 65%;
+  left: 80%;
+  background: url("../images/menu/chuang\ \(1\).png");
+  animation: chuang 4s linear infinite;
+}
+@keyframes chuang{
+0%,100%{
+  background: url("../images/menu/chuang\ \(1\).png") no-repeat;
+  background-size: 100% 100%;
+}
+50%{
+  background: url("../images/menu/chuang\ \(2\).png") no-repeat;
+  background-size: 80% 80%;
+}
+}
+/* 弹出框*/
+.small{
+  width: 100%;
+  height: 700px;
+  background: rgba(0, 0,0, 0.5);
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+}
+.smallBox{
+  width: 479px;
+  height: 322px;
+  /* border: 1px solid red; */
+  margin: 100px auto;
+  background: url("../images/menu/Bg\ \(2\).png");
+}
+.smallBox p{
+  font-size: 26px;
+  color: white;
+  position: relative;
+  top: 105px;
+  left: 50px;
+}
+.smallBox span{
+  font-size: 20px;
+  position: relative;
+  top: -50px;
+  left: 430px;
+}
+.smallBox h2{
+  color: white;
+  font-size: 22px;
+ 
+  position: relative;
+  top: 20px;
+  left: 43%;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.smallBox button{
+  width: 100px;
+  height: 40px;
+  /* background: url("../images/menu/iform.png") no-repeat; */
+  position: relative;
+  top: 200px;
+  left: 33%;
+  text-align: center;
+}

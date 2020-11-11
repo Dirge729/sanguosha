@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/boder.css">
+    <link rel="stylesheet" href="../css/jineng.css">
+</head>
+<body>
+
+<!-- 游戏区域 -->
+<section class="main">
+    <div class="game">
+        <!-- 玩家1 -->
+        <div class="play1">
+            <!-- 玩家1 人物总体内容 -->
+            <div class="person person1">
+                <!-- 人物 -->
+                <!-- <img class="p1" src="../images/game/role1.jpg" alt=""> -->
+                <!-- 人物边框特效 -->
+                <img class="p1" src="" alt="">
+                <div class="personShunshang"></div>
+                <div class="personShan"></div>
+                <div class="personSha"></div>
+                <!-- </div>
+              </div> -->
+                <div class="personContainer">
+                    <div class="personBox">
+                    </div>
+                </div>
+                <!-- 红框 -->
+                <div class="personContainer2">
+                    <div class="personBox2">
+                    </div>
+                </div>
+
+                <svg>
+                    <filter id="wavy">
+                        <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2">
+                            <animate attributeName="baseFrequency" dur="10s" values="0.02;0.05;0.02"
+                                     repeatCount="indefinite"></animate>
+                        </feTurbulence>
+                        <feDisplacementMap in="SourceGraphic" scale="30"></feDisplacementMap>
+                    </filter>
+                </svg>
+                <!-- 血量 -->
+                <ul>
+                    <!-- <li>
+                        <img src="../images/game/qun-magatama-r.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/game/qun-magatama-r.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/game/qun-magatama-r.png" alt="">
+                    </li> -->
+                </ul>
+                <!-- 阵亡 -->
+                <div class="death"></div>
+            </div>
+            <!-- 进度条 按钮 纸牌 -->
+            <div class="proCards proCards1">
+                <!-- 进度条 按钮 -->
+                <div class="proBnt proBnt1">
+                    <!-- 进度条 -->
+                    <div class="progress progress1">
+                        <span class="progress1Span"></span>
+                    </div>
+                    <!-- 按钮 -->
+                    <div class="btn btn1">
+                        <span class="true1"></span>
+                        <span class="end1"></span>
+                    </div>
+                </div>
+                <!-- 纸牌 -->
+                <div class="cards cards1">
+                    <ul>
+                        <!-- <li>
+                          <img src="../images/game/nan.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/skill.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/wan.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/tao.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/san.png" alt="">
+                        </li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 玩家2 -->
+        <div class="play2">
+            <!-- 玩家2 人物总体内容 -->
+            <div class="person person2">
+                <!-- 人物 -->
+                <img class="p2" src="" alt="">
+                <div class="personShunshang"></div>
+                <div class="personShan"></div>
+                <div class="personSha"></div>
+                <!-- 绿框 -->
+                <div class="personContainer">
+                    <div class="personBox">
+                    </div>
+                </div>
+                <!-- 红框 -->
+                <div class="personContainer2">
+                    <div class="personBox2">
+                    </div>
+                </div>
+
+                <!-- 血量 -->
+                <ul>
+                    <!-- <li>
+                        <img src="../images/game/shu-magatama-r.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/game/shu-magatama-r.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/game/shu-magatama-r.png" alt="">
+                    </li> -->
+                </ul>
+                <!-- 阵亡 -->
+                <div class="death"></div>
+            </div>
+            <!-- 进度条 按钮 纸牌 -->
+            <div class="proCards proCards2">
+                <!-- 进度条 按钮 -->
+                <div class="proBnt proBnt2">
+                    <!-- 进度条 -->
+                    <div class="progress progress2">
+                        <span class="progress2Span"></span>
+                    </div>
+                    <!-- 按钮 -->
+                    <div class="btn btn2">
+                        <span class="true2"></span>
+                        <span class="end2"></span>
+                    </div>
+                </div>
+                <!-- 纸牌 -->
+                <div class="cards cards2">
+                    <ul>
+                        <!-- <li>
+                          <img src="../images/game/nan.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/skill.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/wan.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/tao.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/san.png" alt="">
+                        </li> -->
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- 玩家3 -->
+        <div class="play3">
+            <!-- 玩家3 人物总体内容 -->
+            <div class="person person3">
+                <!-- 人物 -->
+                <!-- <div class="personContainer">
+                    <div class="personBox"> -->
+                <img class="p3" src="" alt="">
+                <div class="personShunshang"></div>
+                <div class="personShan"></div>
+                <div class="personSha"></div>
+                <div class="personContainer">
+                    <div class="personBox">
+                    </div>
+                </div>
+                <!-- 红框 -->
+                <div class="personContainer2">
+                    <div class="personBox2">
+                    </div>
+                </div>
+
+                <!-- 血量 -->
+                <ul>
+                    <!-- <li>
+                        <img src="../images/game/wei-magatama-r.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/game/wei-magatama-r.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/game/wei-magatama-r.png" alt="">
+                    </li> -->
+                </ul>
+                <!-- 阵亡 -->
+                <div class="death"></div>
+            </div>
+            <!-- 进度条 按钮 纸牌 -->
+            <div class="proCards proCards3">
+                <!-- 进度条 按钮 -->
+                <div class="proBnt proBnt3">
+                    <!-- 进度条 -->
+                    <div class="progress progress3">
+                        <span class="progress1Span"></span>
+                    </div>
+                    <!-- 按钮 -->
+                    <div class="btn btn3">
+                        <span class="true3"></span>
+                        <span class="end3"></span>
+                    </div>
+
+                </div>
+                <!-- 纸牌 -->
+                <div class="cards cards3">
+                    <ul>
+                        <!-- <li>
+                          <img src="../images/game/nan.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/skill.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/wan.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/tao.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/san.png" alt="">
+                        </li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 玩家4 -->
+        <div class="play4">
+            <!-- 玩家4 人物总体内容 -->
+            <div class="person person4">
+                <!-- 人物 -->
+                <img class="p4" src="" alt="">
+                <div class="personShunshang"></div>
+                <div class="personShan"></div>
+                <div class="personSha"></div>
+                <div class="personContainer">
+                    <div class="personBox">
+                    </div>
+                </div>
+                <!-- 红框 -->
+                <div class="personContainer2">
+                    <div class="personBox2">
+                    </div>
+                </div>
+
+                <!-- 血量 -->
+                <ul>
+                    <!-- <li>
+                        <img src="../images/game/wu-magatama-r.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/game/wu-magatama-r.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/game/wu-magatama-r.png" alt="">
+                    </li> -->
+                </ul>
+                <!-- 阵亡 -->
+                <div class="death"></div>
+            </div>
+            <!-- 进度条 按钮 纸牌 -->
+            <div class="proCards proCards4">
+                <!-- 进度条 按钮 -->
+                <div class="proBnt proBnt4">
+                    <!-- 进度条 -->
+                    <div class="progress progress4">
+                        <span class="progress2Span"></span>
+                    </div>
+                    <!-- 按钮 -->
+                    <div class="btn btn4">
+                        <span class="true4"></span>
+                        <span class="end4"></span>
+                    </div>
+                </div>
+                <!-- 纸牌 -->
+                <div class="cards cards4">
+                    <ul>
+                        <!-- <li>
+                          <img src="../images/game/nan.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/skill.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/wan.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/tao.png" alt="">
+                        </li>
+                        <li>
+                          <img src="../images/game/san.png" alt="">
+                        </li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--背景音乐-->
+<audio src="../images/game/background.ogg" autoplay type="mp3/ogg" loop></audio>
+<!--牌的音效-->
+<audio class="cardMusic" src="" autoplay type="mp3/ogg"></audio>
+<!-- 自动出牌 -->
+<audio class="autoCards" src="" autoplay type="mp3/ogg"></audio>
+<audio class="baoZha" src="" autoplay type="mp3/ogg"></audio>
+<!-- 万箭齐发动画 -->
+<div class="boxContainer">
+    <div class="huoqiu1Box">
+        <div class="huoqiu1"></div>
+    </div>
+    <div class="huoqiu2Box">
+        <div class="huoqiu2"></div>
+    </div>
+    <div class="huoqiu3Box">
+        <div class="huoqiu3"></div>
+    </div>
+    <div class="huoqiu4Box">
+        <div class="huoqiu4"></div>
+    </div>
+    <div class="huoqiu5Box">
+        <div class="huoqiu5"></div>
+    </div>
+    <div class="huoqiu10Box">
+        <div class="huoqiu10"></div>
+    </div>
+    <div class="huoqiu11Box">
+        <div class="huoqiu11"></div>
+    </div>
+</div>
+
+<div class="over">
+    <div class="overGame">
+        <h3>战绩</h3>
+        <div class="info1">
+            <img src=""/>
+            <span>111</span>
+        </div>
+        <div class="info2">
+            <img src=""/>
+            <span>111</span>
+        </div>
+        <div class="info3">
+            <img src=""/>
+            <span>111</span>
+        </div>
+        <div class="info4">
+            <img src=""/>
+            <span>111</span>
+        </div>
+        <a href="./menu.html">确定</a>
+    </div>
+</div>
+
+<div class="lote">
+    <div></div>
+</div>
+<!-- js引用 -->
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/showCards.js"></script>
+<script src="../js/blood.js"></script>
+<script src="../js/game.js"></script>
+<script src="../js/skill.js"></script>
+<script src="../js/roleChioce.js"></script>
+</body>
+</html>

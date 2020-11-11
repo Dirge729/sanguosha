@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <section class="main">
+    <div class="content">
+      <!-- 视频背景 -->
+      <video id="video" autoplay="" loop="" muted="true" >
+        <source src="../images/login/mainBg.mp4" type="video/mp4">
+          <div class="noVideo"></div> 
+      </video>
+      <!-- 登录框整体内容 -->
+      <div class="login">
+        <!-- logo -->
+        <h2>
+          <img src="../images/login/logo.png" alt="">
+        </h2>
+        <!-- 表单 -->
+        <div class="loginForm">
+          <!-- 表单整体内容 -->
+          <div class="loginFormContent">
+            <!-- 账号为空 出现的提示内容 -->
+            <div class="noId">
+              <i></i>
+              <span>请输入手机/邮箱/个性账号</span>
+            </div>
+            <!-- 账号错误 出现的提示内容 -->
+            <div class="errorId">
+              <i></i>
+              <span>对不起，账号不存在，请确认后重新输入</span>
+            </div>
+            <!-- 密码为空 出现的提示内容 -->
+            <div class="noPassword">
+              <i></i>
+              <span>请输入密码</span>
+            </div>
+            <!-- 密码错误 出现的提示内容 -->
+            <div class="errorPassword">
+              <i></i>
+              <span>您输入的静态密码和账号不匹配</span>
+            </div>
+            <!-- 未选中已阅读并同意多选框出现的提示内容 -->
+            <div class="noAgreen">
+              <i></i>
+              <span>请先勾选同意用户协议和隐私协议</span>
+            </div>
+            <!-- 账号整体内容 -->
+            <div class="formTell">
+              <!-- 账号 -->
+              <div class="formTellContent">
+                <span></span>
+              </div>
+              <!-- 输入框 -->
+                <input type="text" class="tell" value="" tabindex="1" maxlength="50" placeholder="手机号码">
+            </div>
+            <!-- 密码整体内容 -->
+            <div class="formPass">
+              <!-- 密码 -->
+              <div class="formPassContent">
+                <span></span>
+              </div>
+              <!-- 输入框 -->
+                <input type="password" class="password" value="" tabindex="2" maxlength="20" placeholder="静态密码">
+            </div>
+            <!-- 自动登录整体内容 -->
+            <div class="formAuto" >
+              <!-- 自动登录框 -->
+              <lable class="formAutoCheckBox">
+                <input type="checkbox">
+              </lable>
+              <!--自动登录 文字 -->
+              <a href="#" class="autoContent"></a>
+            </div>
+            <!-- 登录按钮 -->
+            <div class="formBtn">
+              <a href="#">登录</a>
+            </div>
+            <!-- 已阅读并同意整体内容 -->
+            <div class="formAgreen">
+              <!-- 多选框 -->
+              <input type="checkbox">
+              <label class="formAgreenCheck" checked=""></label>
+              <!-- 已阅读并同意 -->
+              <img src="../images/login/read.png" alt="" class="agreen">
+              <!-- 用户协议 -->
+              <a href="#" class="user"></a>
+              <!-- 和 -->
+              <img src="../images/login/and.png" alt="" class="and">
+              <!-- 隐私协议 -->
+              <a href="#" class="ys"></a>
+            </div>
+          </div>
+          <!-- 其他登录方式 -->
+          <div class="formOther" ></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 背景音乐 -->
+  <audio src="../audio/backgroundMusic.mp3" autoplay loop></audio>
+  <script src="../js/login.js"></script>
+</body>
+</html>

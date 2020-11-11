@@ -1,0 +1,36 @@
+/* 加载页面 */
+body{
+  background-image: url(../images/login/bigBg.jpg);
+  background-repeat:no-repeat;
+  background-size: cover
+}
+.main{
+  width: 90%;
+  margin: auto;
+  overflow: auto;
+}
+.content{
+  width: 100%;
+  height: 624px;
+  position: relative;
+}
+
+/* 背景 */
+.noVideo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top:0;
+  object-fit: fill;
+  background: url(../images/loading/loadingBg.jpg) no-repeat;
+}
+/* 加载 */
+.papre{
+  width: 234px;
+  height: 65px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  background: url(../images/loading/loading.gif) no-repeat;
+}

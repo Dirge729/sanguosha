@@ -1,0 +1,72 @@
+/* 角色选定页面 */
+body{
+  background-image: url(../images/role/bigBg.jpg);
+  background-repeat:no-repeat;
+  background-size: cover
+}
+.main{
+  width: 80%;
+  margin: auto;
+}
+.content{
+  width: 100%;
+  height: 624px;
+  position: relative;
+  margin: 0 auto;
+  background:url(../images/role/background.jpg) no-repeat;
+  background-size: 100%;
+}
+/* 全部角色 */
+.roleAll{
+  width: 70%;
+  height: 500px;
+  float: left;
+  margin: 20px 20px 0 0;
+  background: #18120d;
+  opacity: 0.8;
+  border: 1px solid #54442a;
+}
+.roleAll ul{
+  width: 100%;
+  margin: 20px 0 0 20px;
+}
+.roleAll ul li{
+  width: 100px;
+  height: 140px;
+  float: left;
+  margin: 0 20px 20px 0;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.roleAll ul li img{
+  width: 100%;
+  background-size: 100%;
+}
+/* check 为选中角色的样式 */
+.check{
+  box-shadow: 0 0 25px gold;
+}
+/* 选中的角色 */
+.choices{
+  width: 25%;
+  height: 500px;
+  float: left;
+  margin: 20px auto;
+  background: #18120d;
+  opacity: 0.8;
+  border: 1px solid #54442a;
+}
+.choices img{
+  width: 90%;
+  height: 300px;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+/* 选定按钮 */
+.btn{
+  width: 115px;
+  height: 35px;
+  margin: 80px auto;
+  cursor: pointer;
+  background: url(../images/role/Choices.png) no-repeat;
+}

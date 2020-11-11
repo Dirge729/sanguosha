@@ -1,0 +1,479 @@
+/* 杀特效 */
+.personSha{
+    width: 150px;
+    height: 180px;
+    background: url("../images/shiliang/sha.png");
+    position: absolute;
+    margin: -185px -30px 0px 0px;
+    animation: sha 2s linear infinite ;
+}
+@keyframes sha{
+    0%{
+        background: url("../images/shiliang/sha.png") no-repeat;
+        
+    }
+    100%{
+        background: url("../images/shiliang/sha\ -\ 副本.png") no-repeat;
+    }
+}
+
+/* 闪特效 */
+.personShan{
+    width: 150px;
+    height: 180px;
+    background: url("../images/shiliang/shan.png");
+    position: absolute;
+    /* left: -25px;
+    top: -25px; */
+    margin: -205px -30px 0px -20px;
+    animation: shan 2s linear infinite ;
+}
+@keyframes shan{
+    0%{
+        background: url("../images/shiliang/shan.png") no-repeat;
+        /* background-size: 100% 100%; */
+    }
+    100%{
+        background: url("../images/shiliang/sha\ -\ 副本.png") no-repeat;
+    }
+}
+
+/* 损伤特效 */
+.personShunshang{
+    width: 160px;
+    height: 180px;
+    background: url("../images/shiliang/shunshang.png");
+    position: absolute;
+    margin: -185px -30px 0px 0px;
+    animation: shunshang 2s linear infinite ;
+}
+@keyframes shunshang{
+    0%{
+        background: url("../images/shiliang/shunshang.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    100%{
+        background: url("../images/shiliang/shunshang\ -\ 副本.png") no-repeat;
+    }
+}
+
+/* 火球特效 */
+.huoqiu1{
+    width: 51px;
+    height: 95px;
+    background: url("../images/shiliang/huoqiu2/600-1.png");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 180px;
+    left: 200px;
+    animation: huoqiu2 2s linear infinite;
+}
+
+.huoqiu2{
+    width: 51px;
+    height: 95px;
+    background: url("../images/shiliang/huoqiu2/600-1.png");
+    background-size: 100% 100%;
+    /* background-position: 0px 0px ; */
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    animation: huoqiu2 2s linear infinite alternate;
+}
+.huoqiu1Box{
+    animation: box5 2s linear infinite;
+
+}
+@keyframes box5{
+    0%{
+        position: absolute;
+        top: 50px;
+        
+    }
+ 
+    
+    100%{
+        position: absolute;
+        top: 250px;
+    
+    }
+}
+@keyframes huoqiu2{
+    0%{
+        background: url("../images/shiliang/huoqiu2/600-1.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    12%{
+        background: url("../images/shiliang/huoqiu2/600-2.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    24%{
+        background: url("../images/shiliang/huoqiu2/600-3.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    36%{
+        background: url("../images/shiliang/huoqiu2/600-4.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    48%{
+        background: url("../images/shiliang/huoqiu2/600-5.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    60%{
+        background: url("../images/shiliang/huoqiu2/600-6.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    72%{
+        background: url("../images/shiliang/huoqiu2/600-7.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    84%{
+        background: url("../images/shiliang/huoqiu2/600-8.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    90%{
+        background: url("../images/shiliang/huoqiu2/600-9.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    100%{
+        background: url("../images/shiliang/huoqiu2/600-10.png") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.huoqiu2Box{
+    animation: box 2s linear infinite;
+
+}
+@keyframes box{
+    0%{
+        position: absolute;
+        top: 100px;
+        
+    }
+ 
+    
+    100%{
+        position: absolute;
+        top: 300px;
+    
+    }
+}
+
+.huoqiu3{
+    width: 64px;
+    height: 110px;
+    background: url("../images/shiliang/huoqiu3/huoqiu3-1.png");
+    background-size: 100% 100%;
+    /* background-position: 0px 0px ; */
+    position: absolute;
+    top: 30px;
+    left: 700px;
+    animation: huoqiu3 2s linear infinite alternate;
+}
+@keyframes huoqiu3{
+    0%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-1.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    16%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-2.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    32%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-3.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    48%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-4.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    64%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-5.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    80%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-6.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    100%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-1.png") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.huoqiu3Box{
+    animation: box1 2s linear infinite;
+
+}
+@keyframes box1{
+    0%{
+        position: absolute;
+        top: 30px;
+        
+    }
+ 
+    
+    100%{
+        position: absolute;
+        top: 280px;
+    
+    }
+}
+.huoqiu4{
+    width: 64px;
+    height: 110px;
+    background: url("../images/shiliang/sha\ -\ 副本.png");
+    background-size: 100% 100%;
+    /* background-position: 0px 0px ; */
+    position: absolute;
+    top: 30px;
+    left: 900px;
+    animation: huoqiu4 2s linear  infinite alternate;
+}
+@keyframes huoqiu4{
+    0%{
+        background: url("../images/shiliang/sha\ -\ 副本.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    16%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-2.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    32%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-3.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    48%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-4.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    64%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-5.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    80%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-6.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    100%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-1.png") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.huoqiu4Box{
+    animation: box2 2s linear  infinite;
+
+}
+@keyframes box2{
+    0%{
+        position: absolute;
+        top: 30px;
+        
+    }
+ 
+    
+    100%{
+        position: absolute;
+        top: 150px;
+    
+    }
+}
+.huoqiu5{
+    width: 64px;
+    height: 110px;
+    background: url("../images/shiliang/huoqiu1.PNG");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 150px;
+    left: 580px;
+    animation: huoqiu4 2s linear infinite;
+}
+.huoqiu5Box{
+    animation: box6 2s linear  infinite;
+}
+@keyframes box6{
+    0%{
+        position: absolute;
+        top: -130px;
+        
+    }
+ 
+    
+    100%{
+        position: absolute;
+        top: 150px;
+    
+    }
+}
+.huoqiu6{
+    width: 150px;
+    height: 150px;
+    background: url("../images/shiliang/huoqiu1.PNG");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 400px;
+    left: 700px;
+    animation: huoqiu1 2s linear infinite;
+}
+.huoqiu7{
+    width: 150px;
+    height: 150px;
+    background: url("../images/shiliang/huoqiu1.PNG");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 120px;
+    left: 480px;
+    animation: huoqiu1 2s linear infinite;
+}
+.huoqiu8{
+    width: 150px;
+    height: 150px;
+    background: url("../images/shiliang/huoqiu1.PNG");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 80px;
+    left: 700px;
+    animation: huoqiu1 2s linear infinite;
+}
+.huoqiu9{
+    width: 150px;
+    height: 150px;
+    background: url("../images/shiliang/huoqiu1.PNG");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 350px;
+    left: 350px;
+    animation: huoqiu1 2s linear infinite;
+}
+.huoqiu10{
+    width: 51px;
+    height: 95px;
+    background: url("../images/shiliang/huoqiu2/600-1.png");
+    background-size: 100% 100%;
+    /* background-position: 0px 0px ; */
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    animation: huoqiu2 2s linear infinite alternate;
+}
+@keyframes huoqiu10{
+    0%{
+        background: url("../images/shiliang/huoqiu2/600-1.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    12%{
+        background: url("../images/shiliang/huoqiu2/600-2.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    24%{
+        background: url("../images/shiliang/huoqiu2/600-3.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    36%{
+        background: url("../images/shiliang/huoqiu2/600-4.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    48%{
+        background: url("../images/shiliang/huoqiu2/600-5.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    60%{
+        background: url("../images/shiliang/huoqiu2/600-6.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    72%{
+        background: url("../images/shiliang/huoqiu2/600-7.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    84%{
+        background: url("../images/shiliang/huoqiu2/600-8.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    90%{
+        background: url("../images/shiliang/huoqiu2/600-9.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    100%{
+        background: url("../images/shiliang/huoqiu2/600-10.png") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.huoqiu10Box{
+    animation: box3 2s linear infinite;
+
+}
+@keyframes box3{
+    0%{
+        position: absolute;
+        top: 50px;
+        
+    }
+ 
+    
+    100%{
+        position: absolute;
+        top: 250px;
+    
+    }
+}
+.huoqiu11{
+    width: 64px;
+    height: 110px;
+    background: url("../images/shiliang/sha\ -\ 副本.png");
+    background-size: 100% 100%;
+    /* background-position: 0px 0px ; */
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    animation: huoqiu4 2s linear  infinite alternate;
+}
+@keyframes huoqiu4{
+    0%{
+        background: url("../images/shiliang/sha\ -\ 副本.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    16%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-2.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    32%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-3.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    48%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-4.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    64%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-5.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    80%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-6.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    100%{
+        background: url("../images/shiliang/huoqiu3/huoqiu3-1.png") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.huoqiu11Box{
+    animation: box4 2s linear  infinite;
+
+}
+@keyframes box4{
+    0%{
+        position: absolute;
+        top: 30px;
+        
+    }   
+    100%{
+        position: absolute;
+        top: 150px;    
+    }
+}
+/* 火球容器 */
+.huoqiuContainer{  
+    display: none;
+} 

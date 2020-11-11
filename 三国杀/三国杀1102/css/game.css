@@ -1,0 +1,628 @@
+body{
+  background: url(../images/game/bigBg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.main{
+  width: 100%;
+  height: 700px;
+  /* width: 1240px; */
+  min-width: 1240px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* 游戏区域 */
+.game{
+  width: 1240px;
+  height: 600px;
+  margin: 20px auto 0;
+  position: relative;
+  background:url(../images/game/background.jpg);
+  background-size: 100% 100%;
+}
+/* 人物 */
+.person{
+  width:150px;
+  height: 180px;
+}
+/* 玩家1 */
+.play1{
+  width: 540px;
+  height: 200px;
+  position: absolute;
+  left: calc(50% - 265px);
+  bottom: 0px;
+}
+
+/* 玩家的人物 */
+.person1{
+  position: absolute;
+  right: -80px;
+  bottom: 10px;
+}
+
+.person1 img{
+  width: 150px;
+  height: 180px;
+}
+/* 血量 */
+.person1 ul{
+  width: 56px;
+  height: 19px;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  background: url(../images/game/qun-skill.png);
+}
+.person1 ul li:first-of-type{
+  margin-left: 8px;
+}
+.person1 ul li{
+  float: left;
+  margin-left: 3px;
+}
+.person1 ul li img{
+  width: 10px;
+  height: 10px;
+}
+
+/* 进度条等总体内容 */
+.proCards1{
+  width: 373px;
+  height: 180px;
+}
+
+/* 进度条 按钮*/
+.proBnt1{
+  width: 360px;
+  height: 50px;
+  margin: 0 auto;
+  /*display: none;*/
+  /* background: gainsboro; */
+}
+/* 进度条 */
+.progress1{
+  width: 240px;
+  height: 8px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: #ebebeb;
+}
+
+.progress1Span{
+  width: 100%;
+  position: relative;
+	float: left;
+	margin: 0 -1px;
+	/* min-width: 200px; */
+	height: 100%;
+	border: 1px solid;
+	border-radius: 10px;
+	background-image: linear-gradient(to bottom, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: #85c440;
+	border-color: #78b337 #6ba031 #568128;
+	background-image: linear-gradient(to bottom, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
+}
+
+/* 按钮 */
+.btn{
+  width: 180px;
+  height: 45px;
+  margin: 10px auto 0;
+}
+.true1,.true3{
+  width: 75px;
+  height: 20px;
+  display: block;
+  float: left;
+  margin: 0 20px 0 0;
+  /* border: 1px solid black; */
+  /* border-radius: 5px; */
+  text-align: center;
+  background: url(../images/game/sure.png) no-repeat;
+  background-size: 100%;
+}
+
+.end1,.end3{
+  width: 75px;
+  height: 20px;
+  display: block;
+  float: left;
+  background: url(../images/game/end.png) no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.cards1{
+  height: 130px;
+  margin-top: 30px;
+}
+.cards1 ul{
+  width:350px;
+  height: 130px;
+  clear:both;
+ 
+}
+.cards1 ul li {
+  width: 70px;
+  height: 100px;
+  float: left;
+  position: relative;
+}
+.cards1 ul li img{
+  width: 70px;
+  height: 100px;
+}
+
+/* 玩家2 */
+.play2{
+  width: 200px;
+  height: 560px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  /* background: gold; */
+}
+/* 玩家的人物 */
+.person2{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.person2 img{
+  width: 150px;
+  height: 180px;
+}
+/* 血量 */
+.person2 ul{
+  width: 56px;
+  height: 19px;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  background: url(../images/game/shu-skill.png);
+}
+.person2 ul li:first-of-type{
+  margin-left: 8px;
+}
+.person2 ul li{
+  float: left;
+  margin-left: 3px;
+}
+.person2 ul li img{
+  width: 10px;
+  height: 10px;
+}
+/* 进度条等总体内容 */
+.proCards2{
+  width:200px;
+  height: 360px;
+  position: absolute;
+  left: 0px;
+  top: 210px;
+  /* margin: 10px 0 10px 0px; */
+  /* background: wheat; */
+}
+
+/* 进度条 按钮*/
+.proBnt2{
+  width: 60px;
+  height: 360px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  /* background: gainsboro; */
+}
+/* 进度条 */
+.progress2{
+  width: 8px;
+  height: 240px;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  border-radius: 5px;
+  background: #ebebeb;
+}
+
+.progress2Span{
+  width: 100%;
+  position: relative;
+	float: left;
+	margin: 0 -1px;
+	/* min-width: 8px; */
+	height: 100%;
+	border: 1px solid;
+	border-radius: 10px;
+	background-image: linear-gradient(to bottom, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: #85c440;
+	border-color: #78b337 #6ba031 #568128;
+	background-image: linear-gradient(to bottom, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
+}
+/* 按钮 */
+.btn2{
+  width: 20px;
+  height: 180px;
+  margin:80px 0 0 -10px;
+  
+}
+.true2,.true4{
+  width: 75px;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  margin: 0 50px 85px 0px;
+  background: url(../images/game/sure.png) no-repeat;
+  background-size: 100%;
+  transform: rotate(90deg);
+  text-align: center;
+}
+.end2,.end4{
+  width: 75px;
+  height: 20px;
+  display: block;
+  background: url(../images/game/end.png) no-repeat;
+  background-size: 100%;
+  transform: rotate(90deg);
+  text-align: center;
+}
+.cards2{
+  width: 97px;
+  height: 380px;
+  position: relative;
+  right: -65px;
+}
+.cards2 ul{
+  width: 97px;
+  height: 380px;
+}
+
+.cards2 ul li{
+  width: 97px;
+  height: 70px;
+  /* flex: 1; */
+  
+}
+.cards2 ul li img{
+  width:70px;
+  height: 100px;
+  transform: rotate(-90deg);
+  
+}
+
+
+/* 玩家3 */
+.play3{
+  width: 530px;
+  height: 200px;
+  position: absolute;
+  left: calc(50% - 265px);
+  top: 0px;
+}
+/* 玩家的人物 */
+.person3{
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.person3 img{
+  width: 150px;
+  height: 180px;
+}
+/* 血量 */
+.person3 ul{
+  width: 56px;
+  height: 19px;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  background: url(../images/game/wei-skill.png);
+  
+}
+.person3 ul li:first-of-type{
+  margin-left: 8px;
+}
+.person3 ul li{
+  float: left;
+  margin-left: 3px;
+}
+.person3 ul li img{
+  width: 10px;
+  height: 10px;
+}
+/* 进度条等总体内容 */
+.proCards3{
+  width: 350px;
+  height: 180px;
+  position: absolute;
+  right: 0;
+  top: calc(-71% + 180px);
+}
+
+/* 进度条 按钮*/
+.proBnt3{
+  width: 350px;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  display: block;
+  /* background: gainsboro; */
+}
+/* 进度条 */
+.progress3{
+  width: 240px;
+  height: 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+  border-radius: 5px;
+  background: #ebebeb;
+}
+/* 按钮 */
+.btn3{
+  width: 180px;
+  height: 45px;
+  margin:0px auto 0px;
+ 
+}
+.cards3{
+  width: 350px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.cards3 ul{
+  clear: both;
+  width:350px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards3 ul li{
+  float: left;
+  width: 70px;
+  height: 100%;
+  position: relative;
+  top: 0px;
+}
+.cards3 ul li img{
+  width: 70px;
+  height: 100px;
+}
+
+
+/* 玩家4 */
+.play4{
+  width: 200px;
+  height: 590px;
+  position: absolute;
+  left:10px;
+  top: 0px;
+  /* background: gold; */
+}
+/* 玩家的人物 */
+.person4{
+  position: absolute;
+  left: 10px;
+  bottom: 0px;
+}
+
+.person4 img{
+  width: 150px;
+  height: 180px;
+}
+/* 血量 */
+.person4 ul{
+  width: 56px;
+  height: 19px;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  background: url(../images/game/wu-skill.png);
+}
+.person4 ul li:first-of-type{
+  margin-left: 8px;
+}
+.person4 ul li{
+  float: left;
+  margin-left: 3px;
+}
+.person4 ul li img{
+  width: 10px;
+  height: 10px;
+}
+/* 进度条等总体内容 */
+.proCards4{
+  width:60px;
+  height: 360px;
+  position: absolute;
+  left: 0px;
+  bottom: 210px;
+  /* background: wheat; */
+}
+
+/* 进度条 按钮*/
+.proBnt4{
+  width: 60px;
+  height: 360px;
+  position: absolute;
+  bottom: 0px;
+  left: 140px;
+  display: block;
+  /* background: gainsboro; */
+}
+/* 进度条 */
+.progress4{
+  width: 8px;
+  height: 240px;
+  position: absolute;
+  left: 40px;
+  top: 50px;
+  border-radius: 5px;
+  background: #ebebeb;
+}
+
+/* 按钮 */
+.btn4{
+  width: 20px;
+  height: 180px;
+  margin: 115px 35px 0 -20px;
+}
+
+/* 纸牌 */
+.cards4{
+  width:140px;
+  height:380px;
+  /* background: chartreuse; */
+}
+.cards4 ul{
+  width:140px;
+  height: 380px;
+  /* display: flex; */
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0 0 0 20px;
+  
+}
+
+.cards4 ul li{
+  width: 100px;
+  height: 70px;
+  /* flex: 1; */
+  
+}
+.cards4 ul li img{
+  width:70px;
+  height: 100px;
+  transform: rotate(90deg);
+  
+}
+/* 对每张牌背景设置 */
+.sha{
+  width: 70px;
+  height: 100px;
+  background: url("../images/jineng/杀.png");
+  background-size: 100% 100%;
+}
+.san{
+  width: 70px;
+  height: 100px;
+  background: url("../images/jineng/闪.png");
+  background-size: 100% 100%;
+}
+.tao{
+  width: 70px;
+  height: 100px;
+  background: url("../images/jineng/桃.png");
+  background-size: 100% 100%;
+}
+.nan{
+  width: 70px;
+  height: 100px;
+  background: url("../images/jineng/南蛮入侵.png");
+  background-size: 100% 100%;
+}
+.wan{
+  width: 70px;
+  height: 100px;
+  background: url("../images/jineng/万箭齐发.png");
+  background-size: 100% 100%;
+}
+.overGame{
+  width: 460px;
+  height: 360px;
+  position: absolute;
+  left: 50%;
+  top: 320px;
+  margin-top: -150px;
+  margin-left: -215px;
+  background: #0c0805;
+  opacity: 0.9;
+  border: 1px solid #695028;
+
+}
+.over{
+  display: none;
+  position: relative;
+  top: -718px;
+  width: 100%;
+  height: 700px;
+  background-color: rgba(0,0,0,.7);
+  /* border:1px solid red; */
+}
+.overGame h3{
+  text-align: center;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+}
+.info1,.info2,.info3,.info4{
+  width: 100%;
+  height: 60px;
+  margin: 4px 0 0 0;
+  /*background: gold;*/
+  border-bottom: 1px solid #695028;
+  color: white;
+}
+.info1 img,.info2 img,.info3 img,.info4 img{
+  width: 45px;
+  height: 60px;
+  margin: 0 0 0 20px;
+  background: #0077AA;
+  background-size: 100%;
+}
+.info1 span,.info2 span,.info3 span,.info4 span{
+  width: 50px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+.overGame a{
+  color: black;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  margin: 15px auto 0;
+  background: palegoldenrod;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.lote{
+  display: none;
+  position: relative;
+  left: 797px;
+  top: -485px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0,0,0,0.4);
+  animation: loteRun 3s linear forwards;
+}
+@keyframes loteRun {
+  0%{
+    height:0
+  }
+  50%{
+    height:200px;
+  }
+  100%{
+    height:0
+  }
+}
